@@ -1,0 +1,23 @@
+body{
+  background: #51a0c4;
+  background: linear-gradient(90deg, rgba(81, 160, 196, 1) 0%, rgba(122, 27, 27, 1) 55%, rgba(189, 175, 57, 1) 100%);
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+.Menu a {
+    text-decoration: none !important;
+    color: white !important;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif;
+}
+.Menu a:hover {
+    background-color: #2980b9;
+    text-decoration: none !important;
+    color: white !important;
+}

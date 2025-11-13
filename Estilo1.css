@@ -1,0 +1,41 @@
+
+body {
+    background: #456d80;
+    background: linear-gradient(90deg,rgba(69, 109, 128, 1) 0%, rgba(222, 44, 44, 1) 38%, rgba(189, 175, 57, 1) 100%);
+}
+.imagem1{
+    max-width: 100%;
+    width: 55%;
+    border-radius: 4%;
+    margin: 20px auto;
+    display: block;
+    
+}
+.imagem2{
+    max-width: 100%;
+    width: 55%;
+    border-radius: 4%;
+    margin: 20px auto;
+    display: block;}
+h1{
+    font-size: 2,5rem;
+    text-align: center;
+    color: white;
+    font-style: italic;
+
+}
+
+.texto{
+    white-space: pre-line;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+.texto2{
+    white-space: pre-line;
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
