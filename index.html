@@ -1,15 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRINCIPAL</title>
-  <link rel="stylesheet" href="Estilo_do_index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berserk - Imagem Corrigida</title>
+
+    <link rel="stylesheet" href="Estilo_do_index.css">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=MedievalSharp&display=swap" rel="stylesheet">
+    
+
+    <link rel="icon" type="image/x-icon" href="berserkimg.png">
 </head>
 <body>
-  <h1>
-    Página Principal das minhas coisas 
-  </h1>
-  <div class="Menu"><a href="Clipes.html">Clipes das plays</a></div>
+
+    <div class="container">
+
+        <header class="header">
+            <h1 class="title">Um repositório compartilhado com os de verdade</h1>
+            <p class="subtitle">The Black Swordsman</p>
+        </header>
+        <div class="flex-center">
+            <button class="btn-basic" id = "arquivosBtn">Arquivos</button>
+        </div>
+
+        <main class="main-content">
+            <div class="image-wrapper">
+
+                <img src="Midias/berserkimg.png" alt="Guts - The Black Swordsman" class="berserk-image">
+                
+
+                <div class="image-glow"></div>
+            </div>
+            
+
+            <div class="content">
+                <h2>Guts - O Espadachim Negro</h2>
+                <p class="description">
+                    "Neste mundo, é lutar ou morrer. Por isso, eu luto."<br>
+                    Um guerreiro marcado pelo destino, carregando uma espada maior que seu próprio corpo.
+                </p>
+            </div>
+        </main>
+        <h2>meu zap abaixo</h2>
+        <div class="zaplogo">
+            <a href="https://wa.me/5592986164298" target="_blank">
+                <img src="Midias/pngwing.com.png" alt="WhatsApp" class="zaplogo-img">
+            </a>
+        </div>
+
+        <footer class="footer">
+            <p> Kevin</p>
+            <p class="footer-note">Restrito</p>
+        </footer>
+    </div>
+    
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const image = document.querySelector('.berserk-image');
+            const glow = document.querySelector('.image-glow');
+            
+            if (image && glow) {
+                image.addEventListener('mouseenter', function() {
+                    glow.style.opacity = '0.6';
+                });
+                
+                image.addEventListener('mouseleave', function() {
+                    glow.style.opacity = '0.3';
+                });
+            }
+            
+            console.log('✅ Página carregada com CSS externo');
+        });
+    </script>
+     
+</div>
+    <div class="floating-label" id="senhaLabel">
+    <div class="label-content">
+        <span class="close-btn" id="closeLabel">&times;</span>
+        <h4>🔒 a senha que eu te passei</h4>
+        <input type="password" 
+               id="senhaInput" 
+               placeholder="Digite a senha..."
+               class="senha-input">
+        <button id="verificarSenha" class="btn-verificar">Verificar</button>
+        <div class="mensagem-erro" id="mensagemErro"></div>
+    </div>
+</div>
+    <script src="index.js"></script>
 </body>
 </html>
